@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign In | CryptoVault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="auth">
+  <section class="auth-brand">
+    <img src="assets/logo.svg" alt="CryptoVault logo">
+    <h1>CryptoVault</h1>
+    <p>Your secure gateway to the world of cryptocurrency trading and portfolio management.</p>
+    <ul>
+      <li>◈ Bank-grade security with 2FA protection</li>
+      <li>↗ Real-time market data and analytics</li>
+      <li>▭ Multi-wallet support with staking rewards</li>
+    </ul>
+  </section>
+  <main class="auth-form-wrap">
+    <form class="auth-form" action="index.html" method="get">
+      <h2>Welcome Back</h2>
+      <p class="sub">Enter your credentials to access your account</p>
+      <div class="switcher"><a href="login.html" class="active">Sign In</a><a href="signup.html">Sign Up</a></div>
+      <div class="field"><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="Enter your email" required ></div>
+      <div class="field"><label for="password">Password</label><input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8"></div>
+      <div class="row-between"><label><input type="checkbox" name="remember"> Remember me</label><a href="#">Forgot password?</a></div>
+      <button class="btn btn-primary" type="submit">Sign In</button>
+      <p class="alt">Don't have an account? <a href="signup.html">Sign up for free</a></p>
+    </form>
+  </main>
+</div>
+</body>
+</html>

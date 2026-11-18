@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | CryptoVault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="CryptoVault logo"><span>CryptoVault</span></a>
+
+    <nav class="nav-group" aria-label="Main menu">
+      <p class="nav-label">MAIN MENU</p>
+      <ul class="nav-list">
+        <li><a href="index.html" class="active"><span class="ico">▦</span>Dashboard</a></li>
+        <li><a href="#"><span class="ico">↗</span>Markets</a></li>
+        <li><a href="#"><span class="ico">▭</span>Wallet</a></li>
+      </ul>
+    </nav>
+
+    <nav class="nav-group" aria-label="Account">
+      <p class="nav-label">ACCOUNT</p>
+      <ul class="nav-list">
+        <li><a href="settings.html"><span class="ico">⚙</span>Settings</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="mode-row"><span>☼ Light Mode</span><input class="toggle theme-toggle" type="checkbox" aria-label="Light mode"></div>
+      <a class="logout" href="login.html">⇥ Logout</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="page-title">
+        <h1>Dashboard</h1>
+        <p>Welcome back! Here's your portfolio overview.</p>
+      </div>
+      <div class="tools">
+        <label class="search"><span aria-hidden="true">⌕</span><input type="search" placeholder="Search..." aria-label="Search"></label>
+        <button class="bell" type="button" aria-label="Notifications">🔔<span class="dot">3</span></button>
+        <div class="user">
+          <img src="assets/avatar.svg" alt="Profile picture">
+          <div><strong>Mennatallah Eslam</strong><small>Pro Trader</small></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="dash">
+
+      <article class="card portfolio">
+        <input class="tab-radio" type="radio" name="range" id="pr1"><input class="tab-radio" type="radio" name="range" id="pr2" checked><input class="tab-radio" type="radio" name="range" id="pr3"><input class="tab-radio" type="radio" name="range" id="pr4">
+        <div class="card-head"><h2>Portfolio<br>Overview</h2><div class="pills"><label for="pr1">1D</label><label for="pr2">1W</label><label for="pr3">1M</label><label for="pr4">1Y</label></div></div>
+        <div class="views">
+          <div class="view v1">
+            <svg class="line-chart" viewBox="0 0 300 120" preserveAspectRatio="none" role="img" aria-label="Portfolio value chart">
+              <defs><linearGradient id="fill1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dc9556" stop-opacity=".45"/><stop offset="1" stop-color="#dc9556" stop-opacity="0"/></linearGradient></defs>
+              <polygon points="0,90 40,80 80,85 120,60 160,65 200,45 240,50 300,30 300,120 0,120" fill="url(#fill1)"/>
+              <polyline points="0,90 40,80 80,85 120,60 160,65 200,45 240,50 300,30" fill="none" stroke="#dc9556" stroke-width="2.5" vector-effect="non-scaling-stroke"/>
+            </svg>
+            <div class="days"><span>9am</span><span>11am</span><span>1pm</span><span>3pm</span><span>5pm</span><span>7pm</span></div>
+          </div>
+          <div class="view v2">
+            <svg class="line-chart" viewBox="0 0 300 120" preserveAspectRatio="none" role="img" aria-label="Portfolio value chart">
+              <defs><linearGradient id="fill2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dc9556" stop-opacity=".45"/><stop offset="1" stop-color="#dc9556" stop-opacity="0"/></linearGradient></defs>
+              <polygon points="0,95 50,85 100,88 150,70 200,72 250,50 300,40 300,120 0,120" fill="url(#fill2)"/>
+              <polyline points="0,95 50,85 100,88 150,70 200,72 250,50 300,40" fill="none" stroke="#dc9556" stroke-width="2.5" vector-effect="non-scaling-stroke"/>
+            </svg>
+            <div class="days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+          </div>
+          <div class="view v3">
+            <svg class="line-chart" viewBox="0 0 300 120" preserveAspectRatio="none" role="img" aria-label="Portfolio value chart">
+              <defs><linearGradient id="fill3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dc9556" stop-opacity=".45"/><stop offset="1" stop-color="#dc9556" stop-opacity="0"/></linearGradient></defs>
+              <polygon points="0,100 50,90 100,70 150,80 200,55 250,60 300,35 300,120 0,120" fill="url(#fill3)"/>
+              <polyline points="0,100 50,90 100,70 150,80 200,55 250,60 300,35" fill="none" stroke="#dc9556" stroke-width="2.5" vector-effect="non-scaling-stroke"/>
+            </svg>
+            <div class="days"><span>Week 1</span><span>Week 2</span><span>Week 3</span><span>Week 4</span></div>
+          </div>
+          <div class="view v4">
+            <svg class="line-chart" viewBox="0 0 300 120" preserveAspectRatio="none" role="img" aria-label="Portfolio value chart">
+              <defs><linearGradient id="fill4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dc9556" stop-opacity=".45"/><stop offset="1" stop-color="#dc9556" stop-opacity="0"/></linearGradient></defs>
+              <polygon points="0,100 40,95 80,70 120,78 160,50 200,58 240,30 300,20 300,120 0,120" fill="url(#fill4)"/>
+              <polyline points="0,100 40,95 80,70 120,78 160,50 200,58 240,30 300,20" fill="none" stroke="#dc9556" stroke-width="2.5" vector-effect="non-scaling-stroke"/>
+            </svg>
+            <div class="days"><span>Jan</span><span>Mar</span><span>May</span><span>Jul</span><span>Sep</span><span>Nov</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card perf">
+        <input class="tab-radio" type="radio" name="perf" id="pf1" checked><input class="tab-radio" type="radio" name="perf" id="pf2"><input class="tab-radio" type="radio" name="perf" id="pf3">
+        <div class="card-head"><h2>Asset<br>Performance</h2><div class="pills"><label for="pf1">Week</label><label for="pf2">Month</label><label for="pf3">Year</label></div></div>
+        <div class="views">
+          <div class="view w1"><div class="bars" role="img" aria-label="Asset performance bars"><i style="--h:70%"></i><i style="--h:85%"></i><i class="mid" style="--h:25%"></i><i style="--h:90%"></i><i class="mid" style="--h:50%"></i><i class="mid" style="--h:45%"></i><i class="down" style="--h:40%"></i></div></div>
+          <div class="view w2"><div class="bars" role="img" aria-label="Asset performance bars"><i style="--h:55%"></i><i style="--h:65%"></i><i class="mid" style="--h:80%"></i><i style="--h:45%"></i><i class="mid" style="--h:70%"></i><i class="mid" style="--h:35%"></i><i class="down" style="--h:60%"></i></div></div>
+          <div class="view w3"><div class="bars" role="img" aria-label="Asset performance bars"><i style="--h:40%"></i><i style="--h:60%"></i><i class="mid" style="--h:85%"></i><i style="--h:75%"></i><i class="mid" style="--h:50%"></i><i class="mid" style="--h:90%"></i><i class="down" style="--h:65%"></i></div></div>
+        </div>
+      </article>
+
+      <section class="stats" aria-label="Statistics">
+        <article class="card stat hero"><span class="ico">$</span><small>Total Balance</small><strong>$84,254.32</strong><em>+12.5% this month</em></article>
+        <article class="card stat"><span class="ico">↗</span><small>Total Profit</small><strong>$12,847.00</strong><em>+8.2% vs last week</em></article>
+        <article class="card stat"><span class="ico">◷</span><small>Pending Orders</small><strong>7</strong><em>3 buy, 4 sell</em></article>
+        <article class="card stat"><span class="ico">◈</span><small>Active Assets</small><strong>12</strong><em>Across 4 wallets</em></article>
+      </section>
+
+      <article class="card btc">
+        <div class="coin-head"><strong>BTC/USD&nbsp; $43,256.00</strong><span class="change">+2.34%</span></div>
+        <div class="candles" aria-hidden="true">
+          <i class="down" style="--h:40px;--o:30px"></i><i style="--h:46px;--o:24px"></i><i class="down" style="--h:36px;--o:34px"></i><i style="--h:50px;--o:20px"></i><i class="down" style="--h:34px;--o:30px"></i><i style="--h:42px;--o:18px"></i><i style="--h:38px;--o:14px"></i><i class="down" style="--h:30px;--o:22px"></i><i style="--h:36px;--o:10px"></i><i style="--h:30px;--o:8px"></i><i style="--h:34px;--o:6px"></i>
+        </div>
+      </article>
+
+      <article class="card eth">
+        <div class="coin-head"><strong>ETH/USD&nbsp; $2,284.50</strong><span class="change">+1.87%</span></div>
+        <div class="candles" aria-hidden="true">
+          <i style="--h:34px;--o:30px"></i><i class="down" style="--h:44px;--o:22px"></i><i style="--h:30px;--o:28px"></i><i class="down" style="--h:40px;--o:26px"></i><i style="--h:44px;--o:18px"></i><i style="--h:36px;--o:14px"></i><i class="down" style="--h:30px;--o:20px"></i><i style="--h:34px;--o:12px"></i><i style="--h:30px;--o:10px"></i><i class="down" style="--h:26px;--o:14px"></i><i style="--h:32px;--o:6px"></i>
+        </div>
+      </article>
+
+      <section class="extra" aria-label="Additional panels">
+        <article class="card">
+          <div class="card-head"><h2>Asset Allocation</h2></div>
+          <div class="alloc">
+            <div class="donut" role="img" aria-label="Allocation chart"></div>
+            <ul class="legend">
+              <li style="--c:#dc9556">Bitcoin 45%</li>
+              <li style="--c:#5d9b6b">Ethereum 27%</li>
+              <li style="--c:#6f86c9">Solana 18%</li>
+              <li style="--c:#555">Others 10%</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head"><h2>Portfolio Health</h2></div>
+          <p class="big">86% <small>Excellent</small></p>
+          <div class="meter"><span style="--w:86%"></span></div>
+          <p class="note">Well diversified across 12 assets.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-head"><h2>Risk Level</h2></div>
+          <p class="big">Medium</p>
+          <div class="risk"><span class="on1"></span><span class="on2"></span><span></span></div>
+          <p class="note">Moderate exposure to volatile assets.</p>
+        </article>
+      </section>
+
+    </section>
+  </main>
+</div>
+</body>
+</html>

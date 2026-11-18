@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign Up | CryptoVault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="auth">
+  <section class="auth-brand">
+    <img src="assets/logo.svg" alt="CryptoVault logo">
+    <h1>CryptoVault</h1>
+    <p>Your secure gateway to the world of cryptocurrency trading and portfolio management.</p>
+    <ul>
+      <li>◈ Bank-grade security with 2FA protection</li>
+      <li>↗ Real-time market data and analytics</li>
+      <li>▭ Multi-wallet support with staking rewards</li>
+    </ul>
+  </section>
+  <main class="auth-form-wrap">
+    <form class="auth-form" action="index.html" method="get">
+      <h2>Create Account</h2>
+      <p class="sub">Join CryptoVault in a few steps</p>
+      <div class="switcher"><a href="login.html">Sign In</a><a href="signup.html" class="active">Sign Up</a></div>
+      <div class="field"><label for="name">Full Name</label><input type="text" id="name" name="name" placeholder="Enter your full name" required minlength="3"></div>
+      <div class="field"><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="Enter your email" required ></div>
+      <div class="field"><label for="password">Password</label><input type="password" id="password" name="password" placeholder="Create a password" required minlength="8"></div>
+      <div class="field"><label for="confirm">Confirm Password</label><input type="password" id="confirm" name="confirm" placeholder="Repeat your password" required minlength="8"></div>
+      <button class="btn btn-primary" type="submit">Sign Up</button>
+      <p class="alt">Already have an account? <a href="login.html">Sign in</a></p>
+    </form>
+  </main>
+</div>
+</body>
+</html>

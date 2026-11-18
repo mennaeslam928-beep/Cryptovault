@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Settings | CryptoVault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="CryptoVault logo"><span>CryptoVault</span></a>
+
+    <nav class="nav-group" aria-label="Main menu">
+      <p class="nav-label">MAIN MENU</p>
+      <ul class="nav-list">
+        <li><a href="index.html"><span class="ico">▦</span>Dashboard</a></li>
+        <li><a href="#"><span class="ico">↗</span>Markets</a></li>
+        <li><a href="#"><span class="ico">▭</span>Wallet</a></li>
+      </ul>
+    </nav>
+
+    <nav class="nav-group" aria-label="Account">
+      <p class="nav-label">ACCOUNT</p>
+      <ul class="nav-list">
+        <li><a href="settings.html" class="active"><span class="ico">⚙</span>Settings</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="mode-row"><span>☼ Light Mode</span><input class="toggle theme-toggle" type="checkbox" aria-label="Light mode"></div>
+      <a class="logout" href="login.html">⇥ Logout</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="page-title">
+        <h1>Settings</h1>
+        <p>Manage your account preferences and security.</p>
+      </div>
+      <div class="tools">
+        <label class="search"><span aria-hidden="true">⌕</span><input type="search" placeholder="Search..." aria-label="Search"></label>
+        <button class="bell" type="button" aria-label="Notifications">🔔<span class="dot">3</span></button>
+        <div class="user">
+          <img src="assets/avatar.svg" alt="Profile picture">
+          <div><strong>Mennatallah Eslam</strong><small>Pro Trader</small></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="tabset">
+      <input class="tab-radio" type="radio" name="tab" id="t1"><input class="tab-radio" type="radio" name="tab" id="t2"><input class="tab-radio" type="radio" name="tab" id="t3"><input class="tab-radio" type="radio" name="tab" id="t4" checked><input class="tab-radio" type="radio" name="tab" id="t5">
+      <nav class="tabs" aria-label="Settings sections">
+        <label for="t1">Profile</label><label for="t2">Security</label><label for="t3">Notifications</label><label for="t4">Preferences</label><label for="t5">Connected</label>
+      </nav>
+
+      <form class="card settings-card panel panel-1" action="#">
+        <div class="card-head"><h2>Profile</h2><span>Your personal information</span></div>
+        <div class="form-grid">
+          <div class="field"><label for="fn">Full Name</label><input type="text" id="fn" value="Mennatallah Eslam"></div>
+          <div class="field"><label for="un">Username</label><input type="text" id="un" value="menna.e"></div>
+          <div class="field"><label for="em">Email Address</label><input type="email" id="em" value="menna@example.com"></div>
+          <div class="field"><label for="ph">Phone</label><input type="text" id="ph" value="+20 100 000 0000"></div>
+        </div>
+        <div class="actions"><button class="btn btn-primary" type="button">Save Changes</button><button class="btn btn-ghost" type="button">Cancel</button></div>
+      </form>
+
+      <section class="card settings-card panel panel-2">
+        <div class="card-head"><h2>Security</h2><span>Protect your account</span></div>
+        <div class="switch-row"><div><strong>Two-Factor Authentication</strong><small>Ask for a code when you sign in</small></div><input class="toggle" type="checkbox" checked aria-label="Two-factor authentication"></div>
+        <div class="switch-row"><div><strong>Login Alerts</strong><small>Email me when a new device signs in</small></div><input class="toggle" type="checkbox" checked aria-label="Login alerts"></div>
+        <div class="switch-row"><div><strong>Withdrawal Whitelist</strong><small>Only allow saved wallet addresses</small></div><input class="toggle" type="checkbox" aria-label="Withdrawal whitelist"></div>
+        <div class="actions"><button class="btn btn-primary" type="button">Change Password</button></div>
+      </section>
+
+      <section class="card settings-card panel panel-3">
+        <div class="card-head"><h2>Notifications</h2><span>Choose what you hear about</span></div>
+        <div class="switch-row"><div><strong>Price Alerts</strong><small>Big moves on assets you hold</small></div><input class="toggle" type="checkbox" checked aria-label="Price alerts"></div>
+        <div class="switch-row"><div><strong>Order Updates</strong><small>When an order is filled or cancelled</small></div><input class="toggle" type="checkbox" checked aria-label="Order updates"></div>
+        <div class="switch-row"><div><strong>Weekly Report</strong><small>A summary of your portfolio every Sunday</small></div><input class="toggle" type="checkbox" aria-label="Weekly report"></div>
+        <div class="switch-row"><div><strong>Product News</strong><small>New features and announcements</small></div><input class="toggle" type="checkbox" aria-label="Product news"></div>
+      </section>
+
+      <form class="card settings-card panel panel-4" action="#">
+        <div class="card-head"><h2>Display Preferences</h2><span>Customize how the app looks and behaves</span></div>
+        <div class="form-grid">
+          <div class="field"><label for="currency">Currency</label>
+            <select id="currency"><option>USD - US Dollar</option><option>EUR - Euro</option><option>GBP - British Pound</option><option>EGP - Egyptian Pound</option></select></div>
+          <div class="field"><label for="language">Language</label>
+            <select id="language"><option>English</option><option>Arabic</option><option>French</option><option>German</option></select></div>
+          <div class="field"><label for="timezone">Timezone</label>
+            <select id="timezone"><option>Eastern Time (ET)</option><option>Central European Time (CET)</option><option>Eastern European Time (EET)</option><option>Greenwich Mean Time (GMT)</option></select></div>
+          <div class="field"><label for="date">Date Format</label>
+            <select id="date"><option>MM/DD/YYYY</option><option>DD/MM/YYYY</option><option>YYYY-MM-DD</option></select></div>
+        </div>
+        <div class="switch-row"><div><strong>Compact View</strong><small>Show more data with smaller elements</small></div><input class="toggle compact-toggle" type="checkbox" aria-label="Compact view"></div>
+        <div class="actions">
+          <button class="btn btn-primary" type="button">Save Preferences</button>
+          <button class="btn btn-ghost" type="reset">Reset to Default</button>
+        </div>
+      </form>
+
+      <section class="card settings-card panel panel-5">
+        <div class="card-head"><h2>Connected Accounts</h2><span>Services linked to CryptoVault</span></div>
+        <div class="conn-row"><div><strong>Google</strong><small>Connected</small></div><button class="btn btn-outline" type="button">Disconnect</button></div>
+        <div class="conn-row"><div><strong>Apple</strong><small>Not connected</small></div><button class="btn btn-primary" type="button">Connect</button></div>
+        <div class="conn-row"><div><strong>Binance</strong><small>Connected</small></div><button class="btn btn-outline" type="button">Disconnect</button></div>
+      </section>
+    </div>
+  </main>
+</div>
+</body>
+</html>
